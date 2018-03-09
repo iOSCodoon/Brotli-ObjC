@@ -7,5 +7,8 @@ Pod::Spec.new do |s|
   s.author           = { 'iOSCodoon' => 'ios@codoon.com' }
   s.source           = { :git => 'https://github.com/iOSCodoon/Brotli-ObjC.git', :tag => s.version.to_s }
   s.ios.deployment_target = '8.0'
-  s.source_files = 'Brotli-ObjC/**/*'
+
+  s.source_files = 'Brotli-ObjC/*', 'Brotli-ObjC/src/**/*'
+
+  s.public_header_files = 'Brotli-ObjC/NSData+Brotli.h'
 end
