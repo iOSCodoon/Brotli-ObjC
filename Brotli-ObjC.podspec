@@ -10,6 +10,7 @@ Pod::Spec.new do |s|
   s.public_header_files = 'Brotli-ObjC/NSData+Brotli.h'
   s.ios.deployment_target = "9.0"
   s.watchos.deployment_target = "2.0"
+  s.osx.deployment_target = '10.10'
   s.libraries        = 'stdc++'
   s.pod_target_xcconfig = { 'OTHER_CFLAGS' => '-fgnu-inline-asm' }
 end
